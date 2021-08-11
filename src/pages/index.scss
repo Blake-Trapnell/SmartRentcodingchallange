@@ -74,10 +74,10 @@ main {
 
 @media screen and (max-width: 1150px) { 
 .index--outer-container {
-    height: 120vh;
+    height: fit-content;
 }
 .index--mobile-link {
     display: inline;
-    margin-top: 55px;
+    margin: 55px;
 }
 }
