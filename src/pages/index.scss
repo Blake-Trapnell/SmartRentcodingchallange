@@ -56,6 +56,10 @@ main {
     width: 100vw;
 }
 
+html {
+    background-color: $Gray075;
+}
+
 .index--outer-container {
     height: 100vh;
     width: 100vw;
@@ -74,7 +78,7 @@ main {
 
 @media screen and (max-width: 1150px) { 
 .index--outer-container {
-    height: fit-content;
+    height: 100%;
 }
 .index--mobile-link {
     display: inline;

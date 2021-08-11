@@ -29,8 +29,10 @@
 
     .navbar--outer-container {
         justify-content: center;
+        width: 100%;
     }
     .navbar--page-title {
+        line-break: loose;
         position: relative;
         left: 20px;
     }
