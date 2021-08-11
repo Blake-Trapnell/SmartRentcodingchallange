@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.navbar--outer-container {
+    font-family: $standardFontFamily;
+    color: $Gray950;
+    display: flex;
+    justify-content: space-between;
+    padding:  49px 200.75px 0px 200.75px;
+    width: 1048px;
+}
+
+.navbar--page-title {
+    font-family: $standardFontFamily;
+    font-weight: bold;
+    font-size: $PageTitleFontSize;
+    font-weight: $Bold;
+}
+
+.navbar--link {
+    color: $primary;
+    font-size: $linkSize;
+}
+
+@media screen and (max-width: 1150px) {
+    .navbar--link{
+        display: none;
+    };
+
+    .navbar--outer-container {
+        justify-content: center;
+    }
+
+}

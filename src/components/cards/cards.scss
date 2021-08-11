@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.cards--outer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 49px 200px 0px 200px;
+    width: 1038px;
+
+};
+
+.card--container {
+    height: 359.75px;
+    width: 330px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 9px;
+    transition: .3s;
+    color: $Gray950;
+    box-shadow: 0px 0px 10px 1px #00aca11c;
+
+    &:hover {
+        box-shadow: 5px 5px 5px 3px #00aca134;
+
+        .card--title {
+            color: $primary;
+        }
+
+        .card--link {
+            background-color: $primary;
+            color: white;
+        }
+    }
+};
+
+.card--title {
+    padding: 32px;
+    font-size: $cardTitleFontSize;
+    font-weight: $semiBold;
+    cursor: pointer;
+}
+
+.card--description {
+    height: 200px;
+    padding: 0 32px 0 32px;
+    line-height: 1.6;
+}
+
+.card--link {
+    background-color: white;
+    font-size: $linkSize;
+    height: 62.25px;
+    width: 100%;
+    border: none;
+    border-top: 2px solid $Gray075;
+    border-radius: 0 0 9px 9px;
+    transition: .3s;
+    color: $Gray400;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .cards--outer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card--container {
+        margin-top: 20px;
+    }
+}
