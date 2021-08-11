@@ -59,6 +59,8 @@
     transition: .3s;
     color: $Gray400;
     cursor: pointer;
+    text-align: left;
+    padding-left: 32px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -68,5 +70,9 @@
     }
     .card--container {
         margin-top: 20px;
+    }
+    .card--link {
+        background-color: $primary;
+        color: $Gray075;
     }
 }

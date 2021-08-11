@@ -19,6 +19,7 @@
 .navbar--link {
     color: $primary;
     font-size: $linkSize;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1150px) {
@@ -29,5 +30,8 @@
     .navbar--outer-container {
         justify-content: center;
     }
-
+    .navbar--page-title {
+        position: relative;
+        left: 20px;
+    }
 }
